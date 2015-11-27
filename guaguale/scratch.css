@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+body{
+   background-color: #ffd6cd; 
+}
+body, html{
+    height: 100%;
+    overflow: hidden;
+}
+.wrap{
+    margin: 0 auto;
+    max-width: 640px;
+    position: relative;
+}
+.scratch{
+    width: 100%;
+    background-color: #d60107;
+    padding-top: 60px;
+    height: 690px;
+}
+.scratch img{
+    display: block;
+    margin: auto;
+    width: 430px;
+    height: auto;
+}
+.scratch .guagua{
+    position: relative;
+    //background-color: #fff;
+    height: 68px;
+    line-height: 68px;
+    width: 430px;
+    margin: auto;
+    padding-left: 30px;
+    top: -25px;
+}
+.guagua span{
+    display: block;
+    text-align: center;
+    background-color: #fff;
+}
+#notice{
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 100%;
+    height: 68px;
+    line-height: 68px;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    z-index: 1;
+}
+.guagua p{
+    line-height: 2;
+    color: #fff;
+}
+#shade{
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 400px;
+    height: 68px;
+}
+#clearShade{
+    display: inline-block;
+    border-radius: 3px;
+    padding: 3px 10px; 
+    background-color: #fff;
+}
+@media(max-width:500px){
+    .scratch{
+        padding-top: 30px;
+        height: 387px;
+    }
+    .scratch img{
+        width: 240px;
+    }
+    .scratch .guagua{
+        height: 40px;
+        width: 240px;
+        padding-left: 18px;
+        line-height: 40px;
+        top:-13px;
+    }
+    #shade{
+        left: 18px;
+        width: 222px;
+        height: 40px;
+    }
+    #notice{
+        left: 18px;
+    }
+}

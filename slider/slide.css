@@ -1,0 +1,84 @@
+*{
+    margin: 0px; 
+    padding: 0px;
+}
+li{ 
+    list-style: none;
+}
+img{
+    display: block;
+    margin: auto;
+    border: none;
+}
+#slide{
+    position: relative;
+}
+#slideList{
+    position: relative;
+    overflow: hidden; 
+    height: 480px;
+}
+#slideList li{ 
+    float: left; 
+    width: 100%; 
+    position: absolute;
+    top: 0px; 
+    left: 0px;
+}
+/*#slideList li img{
+    transform: scaleX(1.05) scaleY(1.05); 
+    -ms-transform: scaleX(1.05) scaleY(1.05); 
+    -webkit-transform: scaleX(1.05) scaleY(1.05);
+    -o-transform: scaleX(1.05) scaleY(1.05);
+    -moz-transform: scaleX(1.05) scaleY(1.05);
+    vertical-align: top;
+}*/
+#slide .indexs{
+    position: absolute;
+    width: 100%; 
+    bottom: 40px;
+    z-index: 10;
+}
+#slide .indexs li{ 
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    float: left;
+    background-color: #000;
+    color: #fff;
+    border-radius: 12px;
+    margin: 0px 3px;
+    cursor: pointer;
+}
+#slide .indexs li.cur{ 
+    background-color: #ce1c00;
+}
+#slide .arrowBar{
+    position: absolute; 
+    width: 100%; 
+    top: 40%;
+}
+#slide .arrowBar a{
+    position: absolute;
+    display: block;
+    border-bottom: 35px solid transparent;
+    border-top: 35px solid transparent;
+    width: 0px;
+    height: 0px;
+    z-index: 9999;
+}
+#rightArrow{
+    border-left: 15px solid #ddd;
+    right: 20%;
+}
+#rightArrow:hover{
+    border-left: 15px solid #999;
+}
+#leftArrow{
+    border-right: 15px solid #ddd;
+    left: 20%;
+}
+#leftArrow:hover{
+    border-right: 15px solid #999;
+}
