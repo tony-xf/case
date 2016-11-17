@@ -1,2 +1,3 @@
-# case
-一些个案例
+# jquery特效集
+
+       写过的几个jquery特效
